@@ -1,5 +1,6 @@
 import time
-from search import Dijkstra, AStar
+from search.Dijkstra import Dijkstra
+from search.AStar import AStar
 from search.algorithms import State
 from search.map import Map
 import getopt
@@ -62,7 +63,7 @@ def main():
         goal = goal_states[i]
     
         time_start = time.time()
-        path, cost, expanded_diskstra = None, None, None # Replace the None, None, None with a call to Dijkstra's algorithm
+        path, cost, expanded_diskstra = dijkstra.search(start, goal) # Replace the None, None, None with a call to Dijkstra's algorithm
         time_end = time.time()
         nodes_expanded_dijkstra.append(expanded_diskstra)
         time_dijkstra.append(time_end - time_start)
