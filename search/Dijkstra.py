@@ -1,4 +1,4 @@
-from search.map import Map
+# from search.map import Map
 from search.algorithms import State
 import heapq
 

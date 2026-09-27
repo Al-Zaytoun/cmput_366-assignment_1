@@ -82,7 +82,7 @@ def main():
         goal = goal_states[i]
     
         time_start = time.time()
-        path, cost, expanded_astar = None, None, None # Replace the None, None, None with a call to A*
+        path, cost, expanded_astar = astar.search(start, goal) # Replace the None, None, None with a call to A*
         time_end = time.time()
 
         nodes_expanded_astar.append(expanded_astar)
